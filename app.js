@@ -1,4 +1,4 @@
-const API_KEY = "https://api.groq.com/openai/v1";
+const API_KEY = "sk-ATc2JzTg9PU6tebq79ogYDV7ANIf9IT20UNcGBoSUFiPioXD";
 
 let messages = [
 {
