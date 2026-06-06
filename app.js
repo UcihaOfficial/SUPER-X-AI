@@ -96,14 +96,19 @@ messages:messages
 
 const data = await response.json();
 
-removeTyping();
+console.log(data);
+
+if (!response.ok) {
+throw new Error(
+data.error?.message ||
+"Request gagal"
+);
+}
 
 const reply =
-data?.choices?.[0]?.message?.content ||
-"Maaf, tidak ada balasan.";
+data.choices[0].message.content;
 
-addMessage(reply,"ai");
-
+addMessage(reply, "ai");
 messages.push({
 role:"assistant",
 content:reply
