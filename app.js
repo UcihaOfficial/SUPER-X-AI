@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 
 let messages = [
 {
