@@ -1,3 +1,0 @@
-{
-  uciha not dep
-}
